@@ -1,0 +1,10 @@
+{
+    "context_abstract_evaluation": {
+        
+    },
+    "dois": {
+        "models": "sbert",
+        "doi_list_file": "Input/doi_examples.txt",
+        "output_file": "sbert_eval.tsv"
+    }
+}
