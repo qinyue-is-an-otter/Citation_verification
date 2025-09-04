@@ -1,0 +1,9 @@
+{
+    "epoch" : 6,
+    "lr" : 1e-4,
+    "batch_size" : 16,
+    "drop_out" : 0.5,
+    "input_file" : "Datasets/Input/Annotated_dataset.tsv",
+    "model" : "sbert",
+    "save_model" : "fine_tuning/saved_models/sbert_freezed.bin"
+}

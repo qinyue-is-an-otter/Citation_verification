@@ -94,11 +94,8 @@ def make_file_with_scores(file_input, methods, input_csv):
     
     if (file_input):
         df_new = tools.get_cleaned_df(file_input)# .sample(10000)
-    elif (input_csv):
-        df_new = input_csv
     else:
-        print("Inputs can't be None\n")
-        exit(0)
+        df_new = input_csv
     for method in methods:
         if (method == "Qwen" or method == "Mistral"):
             df_new = qwen(method, df_new)
@@ -135,7 +132,7 @@ def user_prompt_evaluation(abstract, context):
     
 def qwen(method,df):
     if (method == "Qwen"):
-        model_name = "Qwen/Qwen3-1.7B" # Here you can use other size
+        model_name = "Qwen/Qwen3-8B" # Here you can use other size
     else:
         model_name = "mistralai/Mistral-7B-Instruct-v0.3"
     # load the tokenizer and the model
@@ -238,3 +235,4 @@ def evaluate(input_file, methods, output_file, input_df=None):
     df_prediction = make_file_with_scores(input_file, methods, input_df) # with only prediction scores
     df_new = score_prediction(methods, df_prediction, dict_threshold) # verify if the prediction is good or not
     df_new.to_csv(output_file, sep='\t', encoding="utf-8", index = False)
+    return df_new

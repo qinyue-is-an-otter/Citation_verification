@@ -1,10 +1,13 @@
 {
     "context_abstract_evaluation": {
-        
+        "models": "sbert,Qwen,Jaccard",
+        "doi_list_file": "../Datasets/Input/Annotated_dataset.tsv",
+        "output_file": "../Datasets/sbert_eval.tsv",
+        "method_accuracy_check": "Yes"
     },
     "dois": {
-        "models": "sbert",
+        "models": "sbert,Qwen,Jaccard",
         "doi_list_file": "Input/doi_examples.txt",
-        "output_file": "sbert_eval.tsv"
+        "output_file": "sbert,qwen,jaccard_eval.tsv"
     }
 }
