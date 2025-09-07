@@ -58,10 +58,13 @@ def main():
                 result = method_evaluation(df_new, models)
                 print(result)
         if dict_eval_info["dois"] != {}:
-            models, dois_list_file, output_file = (dict_eval_info["dois"][key] for key in dict_eval_info["dois"])
+            models, dois_list_file, output_file, key, mail = (dict_eval_info["dois"][key] for key in dict_eval_info["dois"])
             if (dois_list_file):
                 with open(dois_list_file, "r", encoding="utf-8") as input_doi:
                     doi_list = [doi.strip() for doi in input_doi]
+                functions_abstract.key = key
+                functions_abstract.mail = mail
+                CC_Abstract.key = key
                 final_df = dois_cited_eval(doi_list, "Intermediate/try_pipeline")
                 metrics.evaluate(None, models, output_file, input_df=final_df)
 
