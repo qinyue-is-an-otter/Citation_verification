@@ -1,4 +1,4 @@
-## A pipeline for looking automatically for unrelated citations in scientific articles
+## A pipeline to help verify unrelated citations in scientific articles
 
 ### Introduction
 This work aims at assisting finding suspicious citations in scientific articles.
