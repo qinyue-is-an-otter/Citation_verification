@@ -34,11 +34,11 @@ The first mode `context_abstract_evaluation` requires a tsv file that is compose
 
 The second mode `dois` it's built for scanning through a list of given DOIs to detect possible unrelated citations. Given a doi or a pdf file, our script will automatically extract citation contexts and find the matching cited article or content, then, does the prediction with indicated methods, and returns a file that contains the results.
 
-Use command
+Use command to build the virtual environment
 ```bash
-conda env create -f environment.yml
+conda env create -f environment.yml # Create the environment
+conda activate citation_verif # activate the environment
 ```
-to create the environment
 
 Move the terminal to the Pipeline folder, and use the command:
 ```bash
