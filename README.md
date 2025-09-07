@@ -14,7 +14,7 @@ This work aims at assisting finding suspicious citations in scientific articles.
 2. Verify citations using indicated methods by the user
 
 ### Tutorial
-All you need to do is to modify the `eval_config.json` file to provide the evaluation parameters. We have two modes of citation evaluations. 
+All you need to do is to modify the `pipeline_config.json` file to provide the evaluation parameters. We have two modes of citation evaluations. 
 ```json
 {
     "context_abstract_evaluation": {
