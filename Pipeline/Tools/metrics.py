@@ -185,9 +185,6 @@ dict_threshold = {
     "bert" : 0.754,
     "T5" : 0.741,
     "distilbert" : 0.804,
-    "roberta" : 0.973,
-    "gpt2" : 0.998,
-    "Bleu" : 7.73e-155,
     "Rouge" : 0.001,
     "Jaccard" : 0.0275
 }
