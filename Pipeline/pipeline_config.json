@@ -1,15 +1,15 @@
-{
-    "context_abstract_evaluation": {
-        "models": "sbert,Qwen,Jaccard",
-        "doi_list_file": "../Datasets/Input/Annotated_dataset.tsv",
-        "output_file": "../Datasets/sbert_eval.tsv",
-        "method_accuracy_check": "Yes"
-    },
+{    
     "dois": {
-        "models": "sbert,Qwen,Jaccard",
+        "models": "Bert,Jaccard",
         "doi_list_file": "Input/doi_examples.txt",
-        "output_file": "sbert_qwen_jaccard_eval.tsv",
+        "output_file": "sbert_jaccard_eval.tsv",
         "key" : "fd895b77ece1cd582d9d2a40cc6d23f88008",
         "mail" : "recheinje@gmail.com"
+    },
+    "context_abstract_evaluation": {
+        "models": "Jaccard",
+        "doi_list_file": "../Datasets/Input/Annotated_dataset.tsv",
+        "output_file": "../Datasets/sbert_jaccard_eval.tsv",
+        "method_accuracy_check": "Yes"
     }
 }
