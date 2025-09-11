@@ -49,6 +49,6 @@ Move the terminal to the Pipeline folder, and use the command:
 ```bash
 python3 main.py --evaluate "pipeline_config.json"
 ```
-to try our example files with both modes.
+to try our example files with both modes. (Python 3.10)
 
 
