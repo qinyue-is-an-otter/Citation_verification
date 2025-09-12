@@ -13,6 +13,7 @@ venv/
 env/
 ENV/
 pipenv/
+.vscode/
 
 # Jupyter Notebook
 .ipynb_checkpoints/

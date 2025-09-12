@@ -32,7 +32,7 @@ Make sure you are in Linux system first. After that, you need do to modify the `
     }
 }
 ```
-The first mode `dois` it's built for scanning through a list of given DOIs to detect possible unrelated citations. Given a doi or a pdf file, our script will automatically extract citation contexts and find the matching cited article or content, then, does the prediction with indicated methods, and returns a file that contains the results.
+The first mode `dois` is built for scanning through a list of given DOIs to detect possible unrelated citations. Given a doi or a pdf file, our script will automatically extract citation contexts and find the matching cited article or content, then, does the prediction with indicated methods, and returns a file that contains the results.
 
 The second mode `context_abstract_evaluation` requires a tsv file that is composed of the citation context and the corresponding content (or just abstract) of the cited paper. If the `method_accuracy_check` is *Yes*, then, there must be a column called *Label* in the given file.
 
@@ -43,7 +43,10 @@ Use command to build the virtual environment under Linux
 conda env create -f environment.yml # Create the environment
 conda activate citation_verif # activate the environment
 ```
-If you don't want to run the program on GPU, you can simply use pip to install the packages from the `requirements.txt` file. (Running Qwen and Mistral is not recommended for this environment)
+If you don't want to run the program in the conda environment, you can simply use pip to install the packages from the `requirements.txt` file.
+```bash
+pip install -r "requirements.txt"
+```
 
 Move the terminal to the Pipeline folder, and use the command:
 ```bash
