@@ -17,7 +17,7 @@ logger.addHandler(file_handler)
 
 url = "https://www.ncbi.nlm.nih.gov/pmc/utils/idconv/v1.0/"
 
-# I think we need to anonymize this !!!
+
 key = ""#"fd895b77ece1cd582d9d2a40cc6d23f88008" # NCBI key
 mail = ""#'recheinje@gmail.com'
 

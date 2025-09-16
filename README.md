@@ -30,6 +30,17 @@ Make sure you are in Linux system first. After that, you need do to modify the `
         "output_file": "../Datasets/Annotated_dataset_eval.tsv",
         "method_accuracy_check": "Yes"
     }
+```
+If you don't want to ask for a API key for PMC, you can simply try only the context_abstract_evaluation by making *"dois"* empty in the `pipeline_config.json `file, like this:
+```json
+    
+    "dois": {},
+    "context_abstract_evaluation": {
+        "methods": "sbert,Qwen,Jaccard",
+        "doi_list_file": "../Datasets/Input/Annotated_dataset.tsv",
+        "output_file": "../Datasets/Annotated_dataset_eval.tsv",
+        "method_accuracy_check": "Yes"
+    }
 }
 ```
 The first mode `dois` is built for scanning through a list of given DOIs to detect possible unrelated citations. Given a doi or a pdf file, our script will automatically extract citation contexts and find the matching cited article or content, then, does the prediction with indicated methods, and returns a file that contains the results.

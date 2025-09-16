@@ -3,8 +3,8 @@
         "models": "sbert,Jaccard",
         "doi_list_file": "Input/doi_examples.txt",
         "output_file": "sbert_jaccard_eval.tsv",
-        "key" : "fd895b77ece1cd582d9d2a40cc6d23f88008",
-        "mail" : "recheinje@gmail.com"
+        "key" : "Your key for PMC",
+        "mail" : "Your mail for PMC"
     },
     "context_abstract_evaluation": {
         "models": "sbert,Jaccard",
