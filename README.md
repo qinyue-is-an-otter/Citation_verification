@@ -14,7 +14,7 @@ This work aims at assisting finding suspicious citations in scientific articles.
 2. Calculate the performance of indicated methods with F1 score and accuracy (If the user wishes)
 
 ### Tutorial
-Make sure you are in Linux system first. After that, you need do to modify the `pipeline_config.json` file to provide the evaluation parameters. Of course, if you wish to use `dois` mode, **make sure you have your own key for the PMC database (it's free)**. We have two modes of citation evaluations. 
+Make sure you are in Linux system first. After that, you need to modify the `pipeline_config.json` file to provide the evaluation parameters. Of course, if you wish to use `dois` mode, **make sure you have your own key for the PMC database (it's free)**. We have two modes of citation evaluations. 
 ```json
 {
     "dois": {
@@ -30,10 +30,11 @@ Make sure you are in Linux system first. After that, you need do to modify the `
         "output_file": "../Datasets/Annotated_dataset_eval.tsv",
         "method_accuracy_check": "Yes"
     }
+}
 ```
 If you don't want to ask for a API key for PMC, you can simply try only the context_abstract_evaluation by making *"dois"* empty in the `pipeline_config.json `file, like this:
 ```json
-    
+{  
     "dois": {},
     "context_abstract_evaluation": {
         "methods": "sbert,Qwen,Jaccard",
