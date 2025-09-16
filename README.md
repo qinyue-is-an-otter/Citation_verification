@@ -14,7 +14,7 @@ This work aims at assisting finding suspicious citations in scientific articles.
 2. Calculate the performance of indicated methods with F1 score and accuracy (If the user wishes)
 
 ### Tutorial
-Make sure you are in Linux system first. After that, you need do to modify the `pipeline_config.json` file to provide the evaluation parameters. Of course, if you wish to use `dois` mode, make sure you have your own key for the PMC database (it's free). We have two modes of citation evaluations. 
+Make sure you are in Linux system first. After that, you need do to modify the `pipeline_config.json` file to provide the evaluation parameters. Of course, if you wish to use `dois` mode, **make sure you have your own key for the PMC database (it's free)**. We have two modes of citation evaluations. 
 ```json
 {
     "dois": {
